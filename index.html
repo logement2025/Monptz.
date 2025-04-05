@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>MonPTZ - Simulateur</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 30px auto; padding: 20px; }
+    input, select, button { width: 100%; padding: 10px; margin-top: 10px; }
+    label { margin-top: 15px; display: block; }
+    .result { margin-top: 20px; padding: 15px; background: #f0f8ff; border-radius: 5px; }
+    footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #777; }
+    .logo { text-align: center; margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="logo.png" alt="MonPTZ Logo" width="200">
+  </div>
+
+  <h2>Simulateur PTZ - Estimez votre éligibilité</h2>
+  
+  <form action="https://formsubmit.co/lokidu38@hotmail.fr" method="POST">
+    <label>Code postal :
+      <input type="text" name="Code Postal" required>
+    </label>
+    
+    <label>Nombre de personnes dans le foyer :
+      <input type="number" name="Foyer" required>
+    </label>
+
+    <label>Revenus fiscaux annuels (€) :
+      <input type="number" name="Revenus" required>
+    </label>
+
+    <label>Prix du bien souhaité (€) :
+      <input type="number" name="Prix Bien" required>
+    </label>
+
+    <label>Type de bien :
+      <select name="Type Bien">
+        <option value="Appartement neuf">Appartement neuf</option>
+        <option value="Maison neuve">Maison neuve</option>
+      </select>
+    </label>
+
+    <label>Votre prénom :
+      <input type="text" name="Prénom" required>
+    </label>
+
+    <label>Votre adresse email :
+      <input type="email" name="Email" required>
+    </label>
+
+    <button type="submit">Recevoir ma simulation par email</button>
+    <input type="hidden" name="_subject" value="Nouveau lead MonPTZ !">
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+
+  <footer>
+    &copy; 2025 MonPTZ - Tous droits réservés
+  </footer>
+</body>
+</html>
