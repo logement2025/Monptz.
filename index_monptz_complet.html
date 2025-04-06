@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonPTZ – Accueil</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      color: #333;
+    }
+    header {
+      position: relative;
+      background: linear-gradient(135deg, #2D82B5 0%, #4da8da 100%);
+      text-align: center;
+      padding: 2rem 1rem 5rem;
+      color: white;
+    }
+    header img {
+      max-width: 200px;
+      height: auto;
+    }
+    header h1 {
+      margin: 0.5rem 0 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    .wave-divider {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+    .wave-divider svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 150px;
+    }
+    main {
+      background: #fff;
+      padding: 2rem 1rem;
+    }
+    .simulator-section {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .simulator-section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+      margin-right: 0.5rem;
+    }
+    #extra-fields {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      background: #2D82B5;
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #256b94;
+    }
+    .accordions {
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+    details {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      background: #f8f8f8;
+    }
+    details summary {
+      font-weight: bold;
+      outline: none;
+      cursor: pointer;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] {
+      background: #e8e8e8;
+    }
+    details div {
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo MonPTZ">
+    <h1>MonPTZ</h1>
+    <p>Votre simulateur simple & rapide du Prêt à Taux Zéro</p>
+    <div class="wave-divider">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 126" preserveAspectRatio="none">
+        <path fill="#ffffff" d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z"></path>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="simulator-section">
+      <h2>Simulateur PTZ</h2>
+      <form>
+        <div class="form-group"><label>Revenus du foyer (€)</label><input type="number" required></div>
+        <div class="form-group"><label>Nombre de personnes</label><select><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+        <div class="form-group"><label>Code postal</label><input type="text" pattern="\d{5}" required></div>
+        <div class="form-group"><label><input type="checkbox" id="receiveHomes"> Je souhaite recevoir des logements éligibles</label></div>
+        <div id="extra-fields">
+          <div class="form-group"><label>Surface souhaitée (m²)</label><input type="number"></div>
+          <div class="form-group"><label>Typologie (T1, T2, ...)</label><input type="text"></div>
+          <div class="form-group"><label>Budget maximum (€)</label><input type="number"></div>
+          <div class="form-group"><label>Téléphone</label><input type="tel"></div>
+        </div>
+        <div class="form-group"><button type="submit">Évaluer</button></div>
+      </form>
+    </section>
+
+    <section class="accordions">
+      <details>
+        <summary>Mentions Légales & Politique RGPD</summary>
+        <div><p>En remplissant ce formulaire, vous acceptez que vos données soient utilisées à des fins commerciales. Conformément à la réglementation RGPD, vous pouvez demander leur suppression à tout moment.</p></div>
+      </details>
+      <details>
+        <summary>Suppression des données personnelles</summary>
+        <div>
+          <form action="https://formsubmit.co/lokidu38@hotmail.fr" method="POST">
+            <div class="form-group"><label>Nom</label><input type="text" name="name" required></div>
+            <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+            <div class="form-group"><label>Demande</label><textarea name="message">Je souhaite demander la suppression de mes données personnelles.</textarea></div>
+            <input type="hidden" name="_subject" value="Demande de suppression des données personnelles - MonPTZ">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit">Envoyer la demande</button>
+          </form>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('receiveHomes').addEventListener('change', function () {
+      document.getElementById('extra-fields').style.display = this.checked ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+</html>
