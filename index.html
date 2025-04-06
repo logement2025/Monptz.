@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>MonPTZ - Simulateur PTZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e6f0ff, #f8f9fa);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #003c8f, #0050b3);
+      color: white;
+      padding: 40px 0 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header img {
+      width: 180px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      font-size: 16px;
+      color: #d0e3ff;
+      margin-top: 5px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+    h2 {
+      text-align: center;
+      color: #003c8f;
+    }
+    .features {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .feature {
+      background: #f0f6ff;
+      padding: 20px;
+      flex: 1 1 45%;
+      border-radius: 10px;
+      font-size: 15px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.03);
+    }
+    .formulaire {
+      margin-top: 40px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #888;
+      margin: 60px 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo MonPTZ">
+    <h1>MonPTZ</h1>
+    <p>Votre simulateur simple & rapide du Prêt à Taux Zéro</p>
+  </header>
+
+  <div class="container">
+    <h2>Êtes-vous éligible au Prêt à Taux Zéro ?</h2>
+
+    <div class="features">
+      <div class="feature">Jusqu’à 138 000 € sans intérêts</div>
+      <div class="feature">Réservé aux primo-accédants</div>
+      <div class="feature">Compatible avec le neuf</div>
+      <div class="feature">100% gratuit et sans engagement</div>
+    </div>
+
+    <div class="formulaire">
+      <h2>Remplissez le formulaire ci-dessous :</h2>
+
+      <!-- Formulaire Brevo à insérer ici -->
+      <div id="brevo-formulaire" style="margin-top: 20px;">
+        <p>Le formulaire d’inscription Brevo sera intégré ici.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 MonPTZ - Tous droits réservés
+  </footer>
+</body>
+</html>
